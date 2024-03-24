@@ -28,6 +28,28 @@ header {
     box-shadow: 0 2px 4px #3a3a3a;
 }
 
+header a{
+text-decoration: none;
+color: inherit;
+}
+
+h1 {
+    font-family: 'IBM+Plex+Sans+Thai', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #008000;
+}
+
+#menu {
+    font-size: 112%;
+    letter-spacing: 3px;
+    list-style-type: none;
+}
+
+#menu > li{
+    margin-bottom: 0.8em;
+}
+
 /*Main content*/
 main {
     background-color: lightblue;
