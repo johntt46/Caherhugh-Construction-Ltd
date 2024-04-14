@@ -25,7 +25,10 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 4px #3a3a3a;
+    box-shadow: 0 2px 4px #292929;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a{
@@ -48,6 +51,51 @@ h1 {
 
 #menu > li{
     margin-bottom: 0.8em;
+}
+
+.active {
+    border-bottom: 1.5px dotted#292929;
+}
+
+nav {
+    position: absolute;
+    background-color: #d7d5d5fb;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 4px #292929;
+    display: none;
+    top: 100%;
+}
+
+#nav-toggle:checked~nav {
+    display: block;
+}
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-lable{
+font-size: 1.3rem;
+}
+
+/*Media queries for driffernt screen sizes*/
+@media only screen and (max-width: 767px) {
+    h1{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    h1{
+        font-size: 42.3px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    h1{
+        font-size: 50px;
+    }
 }
 
 /*Main content*/
